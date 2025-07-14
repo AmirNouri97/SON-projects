@@ -249,6 +249,9 @@ main{
 }
 
 /*customer*/
+.customer-section-logo-color{
+    stroke: var(--color-purple);
+}
 .customers{
     display: flex;
     align-items: center;
@@ -415,8 +418,66 @@ opacity: 0.5;
 }
 
 
+/*comments*/
+.comments-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.comment-container{
+    direction: rtl;
+    width: auto;
+    height: 260px;
+border: 1px solid black;
+display: flex;
+flex-direction: column;
+box-shadow: -6px 6px 10px 2px rgba(0, 0, 0, .3);
+align-items: start;
+padding: 20px 20px ;
+border-radius: 8px;
+}
 
+.comment-text{
+    position: relative;
+    font-size: .8rem;
+    margin-bottom: 3rem;
+    line-height: 1.3rem;
+    text-align: justify;
 
+}
+.comment-text::after{
+    position: absolute;
+    bottom: 0;
+    content: "";
+    background-color: var(--color-red);
+    height: 3px;
+    width: 100%;
+    left: 0;
+    margin-bottom: -2rem;
+
+}
+.comment-user{
+display: flex;
+flex-direction: row-reverse;
+align-items: center;
+justify-content: end;
+gap: 2rem;
+}
+.comment-user-name{
+
+}
+.comment-user-image{
+width: 48px;
+height: 48px;
+border-radius: 100%;
+}
+.comment-user-image img{
+width: 48px;
+height: 48px;
+border-radius: 100%;
+}
 footer{
     height: 600px;
 }
