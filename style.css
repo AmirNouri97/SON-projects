@@ -478,6 +478,120 @@ width: 48px;
 height: 48px;
 border-radius: 100%;
 }
-footer{
+
+
+
+/*footer*/
+
+.footer{
+    margin-top: 2rem;
+    position: relative;
+    width: 100%;
     height: 600px;
+    background-image: -webkit-linear-gradient(-45deg, #667eea 0%, #764ba2 100%) ;
+}
+.footer::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 345px;
+    background-image: url(/public/bannerbelow.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+}
+.footer-container{
+    margin-top: 6rem;
+    padding-top: 19rem;
+    display: grid;
+    direction: rtl;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+.footer-container ul{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.footer-container ul li{
+    display:flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 10px;
+     color: var(--color-white);
+    font-size: 1.2rem;
+    transition: all 300ms ease;
+    text-shadow: 3px 3px 2px rgba(0, 0, 255, 0.5);
+}
+
+.footer-container ul li span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-container ul li svg{
+    width: 1rem;
+    height: 1rem;
+    stroke: var(--color-red);
+}
+.footer-address{
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.6rem;
+    color: var(--color-white);
+    font-size: 1.2rem;
+}
+
+
+.footer-links-title{
+    color: var(--color-white);
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+        text-shadow: 3px 3px 2px rgba(0, 0, 255, 0.5);
+
+}
+.footer-email-box-input{
+position: relative;
+}
+.footer-email-box-input input{
+    padding: 6px 12px;
+    direction: ltr;
+    font-size: 1rem;
+    color: var(--color-black);
+    width: 350px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+.footer-email-box-input button{
+    position: absolute;
+    top: 9%;
+    right: 1%;
+    border: none;
+    padding: 2px 12px;
+    border-radius: 4px;
+    background-color:var(--color-white) ;
+    color: var(--color-red);
+    font-size: 1.2rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all ease 300ms;
+}
+.footer-email-box-input button:hover{
+    background-color: var(--color-red);
+    color: var(--color-white);
+}
+.footer-email-box-text{
+margin-bottom: 2rem;
+    text-align: center;
+    color: var(--color-white);
+    font-size: 1.1rem;
+    text-shadow: 3px 3px 2px rgba(0, 0, 255, 0.5);
 }
